@@ -55,14 +55,18 @@ This project integrates several modern data engineering and analytics tools:
 
 ---
 
-## Documentation & Reproducibility
+## Documentation & Reproducibility (Reproduzierbarkeit)
 
-All transformation steps, SQL logic, and explanations are documented **in detail** within the two notebooks included in this repository:
+All transformation steps, SQL logic, and explanations are documented in detail within the two notebooks included in this repository:
 
-- **`Cohort_Analysis_Data_Setup_(bigquery).ipynb`**  
-  Contains the full data ingestion and setup workflow in Google BigQuery, including dataset creation, table loading, and preparation of the source schema for Fivetran replication.
+### 1. **`Cohort_Analysis_Data_Setup_(bigquery).ipynb`**
 
-- **`Cohort_Analysis_Transformation_(Databricks).ipynb`**  
-  Includes all transformation logic performed in Databricks (Spark SQL), such as cohort identification, retention and repeat purchase calculations, KPI normalization, and creation of the final analytical table.
+* Contains the full data ingestion and **setup workflow in Google BigQuery**.
+* Includes **dataset creation**, initial **CSV loading** (via GCS), and preparation of the final **source schema** for Fivetran replication.
+
+### 2. **`Cohort_Analysis_Transformation_(Databricks).ipynb`**
+
+* Includes all **transformation logic** performed in **Databricks (Spark SQL)**.
+* Covers **cohort identification**, **retention and repeat purchase calculations**, **KPI normalization**, and creation of the **final analytical table**.
 
 Together, these notebooks provide a complete and transparent walkthrough of the entire **ELT process**—from data ingestion to the final analytical dataset and dashboard.
