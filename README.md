@@ -74,10 +74,13 @@ This project integrates several modern data engineering and analytics tools:
 
 ## Dashboard
 
-![Fivetran Sync Konfiguration Screenshot](dashboard_&_report/dashboard_screenshot.png)
+![Dashboard Screenshot](dashboard_&_report/dashboard_screenshot.png)
+
 <a href="dashboard_&_report/Dashboard_View.pdf" download="Dashboard_View.pdf">
     Download PDF Dashboard (Best Resolution)
 </a>
+
+> **Download Tip:** If the PDF opens in your browser instead of downloading, click the **'Download' button** (down arrow icon) on the preview page, or right-click the link and select **"Save Link As..."**
 
 ---
 
