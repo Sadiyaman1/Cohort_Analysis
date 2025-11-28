@@ -12,7 +12,6 @@ All metric calculations are performed using data transformations in Databricks, 
 
 ## Data Pipeline & Architecture (ELT Workflow)
 
-![Fivetran Sync Konfiguration Screenshot](dashboard_&_report/dashboard_screenshot.png)
 ![Fivetran Sync Konfiguration Screenshot](config/fivetran_config_screenshot.png)
 
 The data flows through an automated **ELT** process (Extract, Load, Transform) across the following components:
@@ -75,6 +74,7 @@ This project integrates several modern data engineering and analytics tools:
 
 ## Dashboard
 
+![Fivetran Sync Konfiguration Screenshot](dashboard_&_report/dashboard_screenshot.png)
 ![Dashboard Screenshot](dashboard_&_report/Dashboard_View.pdf)
 
 ---
