@@ -34,3 +34,35 @@ The data flows through an automated **ELT** process (Extract, Load, Transform) a
 * **Revenue & Order Contribution:** Aggregating **total cohort revenue** (`cohort_sales`) and **total cohort orders** (`cohort_orders`).
 * **KPI Normalization:** Calculating the proportional contributions relative to the entire customer base (`cohort_size_total_customers_ratio`, etc.).
 * **Creation of the Final Table:** Merging all key metrics into a final dashboard-ready table (`final_db_table`) for use in BI tools.
+
+---
+
+## Tools & Technologies Used
+
+This project integrates several modern data engineering and analytics tools:
+
+| Component | Tool / Technology | Purpose |
+|----------|-------------------|---------|
+| Cloud Storage | **Google Cloud Storage (GCS)** | Staging raw CSV files before warehouse loading |
+| Data Warehouse | **Google BigQuery** | Primary storage for raw source data |
+| EL Replication | **Fivetran** | Automated extraction & loading of source tables into Databricks |
+| Lakehouse Platform | **Databricks (Unity Catalog, SQL Warehouse)** | Transformation layer, cohort computations, metric engineering |
+| Notebook Environment | **Databricks Notebooks (Python + SQL)** | Step-by-step transformations and logic explanation |
+| Dashboarding | **Databricks Dashboards v3** | Visualization of retention and repeat purchase KPIs |
+
+**Dashboard Link:**  
+🔗 https://dbc-b854569c-8de6.cloud.databricks.com/dashboardsv3/01f0cae796b712dc8428349afbb05e1e/published?o=4166173051620611
+
+---
+
+## Documentation & Reproducibility
+
+All transformation steps, SQL logic, and explanations are documented **in detail** within the two notebooks included in this repository:
+
+- **`Cohort_Analysis_Data_Setup_(bigquery).ipynb`**  
+  Contains the full data ingestion and setup workflow in Google BigQuery, including dataset creation, table loading, and preparation of the source schema for Fivetran replication.
+
+- **`Cohort_Analysis_Transformation_(Databricks).ipynb`**  
+  Includes all transformation logic performed in Databricks (Spark SQL), such as cohort identification, retention and repeat purchase calculations, KPI normalization, and creation of the final analytical table.
+
+Together, these notebooks provide a complete and transparent walkthrough of the entire **ELT process**—from data ingestion to the final analytical dataset and dashboard.
