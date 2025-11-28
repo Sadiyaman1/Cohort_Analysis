@@ -42,15 +42,16 @@ The data flows through an automated **ELT** process (Extract, Load, Transform) a
 
 | Directory / File | Description |
 | :--- | :--- |
-| **`config/`** | Contains configuration files and external tool documentation (`fivetran_configuration.md`, sync details). |
-| **`dashboard & report/`** | Stores the final output reports and rendered dashboard screenshots (e.g., PDFs from Databricks SQL Analytics). |
-| **`data/source/`** | Repository for the raw, initial data file (`ecom_orders.csv`) before ingestion into BigQuery. |
-| **`notebooks/`** | Main directory for all executable data processing notebooks. |
-| ├── `data_ingestion/` | Notebooks for **Extract & Load** into BigQuery (e.g., `Cohort_Analysis_Data_Setup_(bigquery).ipynb`). |
-| └── `databricks_transformation/` | Notebooks for the analytical **Transformation (T)** logic in Databricks (e.g., `Cohort_Analysis_Transformation_(Databricks).ipynb`). |
-| **`.gitignore`** | Specifies files and directories (like environment files or checkpoints) that Git should ignore. |
-| **`LICENSE`** | The licensing terms for the project (e.g., MIT License). |
-| **`README.md`** | This main documentation file. |
+| **`config/`** | Configuration files (e.g., Fivetran setup). |
+| **`dashboard & report/`** | Dashboard exports and project reports. |
+| **`data/source/`** | Raw input data (`ecom_orders.csv`). |
+| **`notebooks/`** | All project notebooks for data processing. |
+| ├── `data_ingestion/` | BigQuery setup and ingestion notebook. |
+| └── `databricks_transformation/` | Databricks transformation and analysis notebook. |
+| **`.gitignore`** | Files excluded from version control. |
+| **`LICENSE`** | Project license. |
+| **`README.md`** | Main project documentation. |
+
 
 ---
 
