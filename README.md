@@ -80,7 +80,7 @@ This project integrates several modern data engineering and analytics tools:
     Download PDF Dashboard (Best Resolution)
 </a>
 
-> **Download Tip:** If the PDF opens in your browser instead of downloading, click the **'Download' button** (down arrow icon) on the preview page, or right-click the link and select **"Save Link As..."**
+> **Download Tip:** If the PDF opens to this preview page, please click the **"Download raw file" button** (down arrow icon) located in the upper right corner to save the file.
 
 ---
 
